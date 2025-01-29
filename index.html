@@ -47,12 +47,13 @@
                 grid-column: span 2;
                 display: flex;
                 justify-content: center;
-                img {
-                    width: 175px;
-                    aspect-ratio: 1;
-                    border-radius: 50%;
-                    object-fit: cover;
-                }
+            }
+
+            #avatar-img {
+                width: 175px;
+                aspect-ratio: 1;
+                border-radius: 50%;
+                object-fit: cover;
             }
 
             .username {
@@ -60,9 +61,7 @@
                 margin-block-start: 0.75rem;
                 margin-block-end: 2rem;
                 color: #fff;
-                h3 {
-                    text-align: center;
-                }
+                text-align: center;
             }
 
             /* Styles communs des boutons */
@@ -272,11 +271,9 @@
     <body>
         <div class="container">
             <div class='avatar'>
-                <img src='image.jpg'>
+                <img id='avatar-img' src='image.jpg'>
             </div>
-            <div class='username'>
-                <h3>Xuân Dương</h3>
-            </div>
+            <h3 class='username' >Xuân Dương</h3>
             <div class="btn card">
                 <div class="card-text">HAPPY NEW YEAR 2025</div>
             </div>
